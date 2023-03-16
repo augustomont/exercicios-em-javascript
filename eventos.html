@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            line-height: 200px;
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Primeira forma usando os comandos dentro do div-->
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()">
+        interaja...
+    </div>
+
+    <script>
+        let caixa = document.querySelector('div#area')
+
+        function clicar(){
+            caixa.innerHTML = 'clicou'
+            caixa.style.backgroundColor = 'red'
+            caixa.style.color = 'yellow'
+        }
+
+        function entrar(){
+            caixa.innerHTML = 'entrou'
+            caixa.style.backgroundColor = 'yellow'
+            caixa.style.color = 'red'
+        }
+
+        function sair(){
+            caixa.innerHTML = 'saiu'
+            caixa.style.backgroundColor = 'yellow'
+            caixa.style.color = 'red'
+        }
+    </script>
+
+
+
+<!-- Segunda forma de colocar eventos-->
+    <div id="area2">
+        interaja2...
+    </div>
+<!--apague conentario abaixo, para fazer o script funcionar-->
+    <!--<script>
+        let caixa2 = document.querySelector('div#area2')
+        caixa2.addEventListener('click', clicar)
+        caixa2.addEventListener('mouseenter', entrar)
+        caixa2.addEventListener('mouseout',sair)
+        function clicar(){
+            caixa2.innerHTML = 'clicou'
+            caixa2.style.backgroundColor = 'red'
+            caixa2.style.color = 'yellow'
+        }
+
+        function entrar(){
+            caixa2.innerHTML = 'entrou'
+            caixa2.style.backgroundColor = 'yellow'
+            caixa2.style.color = 'red'
+        }
+
+        function sair(){
+            caixa2.innerHTML = 'saiu'
+            caixa2.style.backgroundColor = 'yellow'
+            caixa2.style.color = 'red'
+        }
+    </script>
+</body>
+</html>
