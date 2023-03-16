@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar de Velocidade</title>
+</head>
+<body>
+    <h1>Radar e velocidade</h1>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Medir" onclick="medir()">
+    <div id="txtres">Aguardando...</div>
+<script>
+    let txtvel = document.querySelector('input#txtvel')
+    let res = document.querySelector('div#txtres')
+    
+    function medir(){
+        let vel = Number(txtvel.value)
+        res.innerHTML = `<p>Sua velocidade é <strong>${vel}km/h</strong></p>`
+        if(vel > 40){
+            res.innerHTML += 'Você esta multado!'
+        } else{
+            res.innerHTML += 'Dirija com atenção.'
+        }
+        
+    }
+</script>
+</body>
+</html>
