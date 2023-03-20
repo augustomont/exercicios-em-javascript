@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quem deve é obrigado a votar?</h1>
+    <p>Qual a sua idade?</p>
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="Verificar" onclick="veri()">
+    <p id="Verificando">Verificando...</p>
+    
+    <script>
+        let txtidade = document.querySelector('input#idade')
+        let verificando = document.querySelector('p#Verificando')
+        
+        function veri(){
+            let idade = Number(txtidade.value)
+            
+            if (idade<16){
+                verificando.innerHTML = 'Não vota!'
+            } else if(idade<18 || idade > 64){
+                verificando.innerHTML = "Voto opcional."
+            } else {
+                verificando.innerHTML = "Voto obrigatório!"
+            }
+        }
+    </script>
+</body>
+</html>
