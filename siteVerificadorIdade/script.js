@@ -5,8 +5,9 @@ function carregar(){
     let resultado = document.querySelector('p#resultado')
     let img = document.querySelector('img#imagem')
     let data = new Date()
-    let hoje = data.getFullYear
-if (hoje-ano > 18){
+    let hoje = data.getFullYear()
+if (hoje -= ano > 18){
+    window.alert(hoje)
     resultado.innerHTML = 'Homem'
 } else{
 
