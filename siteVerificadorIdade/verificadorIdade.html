@@ -12,13 +12,21 @@
         <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <p>Ano de nascimento <input type="number" name="" id="ano"></p>
-        <p>Sexo: 
-            <input type="radio" name="" id="homem" checked>Homem 
-            <input type="radio" name="" id="mulher">Mulher</p>
-        <input onclick= carregar() type="button" value="Verificar">
         <div>
-            <p id="resultado">Saiba o resultado...</p>
+            <p>Ano de Nascimento <input type="number" name="" id="txtano" min="0"></p>
+            <p>Sexo:
+                <!--Importante o name deles serem iguais. caso contrario, vai permitir marcar todos ao mesmo tempo-->
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input onclick= verificar() type="button" value="Verificar">
+            </p>
+        </div>
+        <div id="res">
+            Saiba o resultado...
             <img id="imagem" src="imagens/robo.jpg" alt="imagem HTML">
         </div>
     </section>
