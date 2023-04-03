@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(189, 189, 247);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hora do sistema</h1>
+    <input type="button" value="verificar" onclick="verHora()">
+    <p id="diaSem">Hoje é...</p>
+    <p id="Horario">A hora do seu sistema é...</p>
+
+
+    <script>
+        let diaSem = document.querySelector('p#diaSem')
+        let horario = document.querySelector('p#Horario')
+
+        function verHora(){
+            let agora = new Date()
+            let dia = agora.getDay()
+            let hora = agora.getHours()
+            let min = agora.getMinutes()
+            horario.innerHTML = `Agora são ${hora}:${min} `
+
+            switch(dia){
+                case 0: diaSem.innerHTML = `Hoje é Domingo`
+                break
+                case 1: diaSem.innerHTML = `Hoje é Segunda`
+                break
+                case 2: diaSem.innerHTML = `Hoje é terça`
+                break
+                case 3: diaSem.innerHTML = `Hoje é Quarta`
+                break
+                case 4: diaSem.innerHTML = `Hoje é Quinta`
+                break
+                case 5: diaSem.innerHTML = `Hoje é Sexta`
+                break
+                case 6: diaSem.innerHTML = `Hoje é Sabado`
+                break
+                
+            }
+        }
+    </script>
+</body>
+</html>
