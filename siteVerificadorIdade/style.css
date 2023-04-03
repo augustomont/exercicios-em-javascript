@@ -9,6 +9,8 @@ section{
 }
 footer{
     background-color:rgb(122, 127, 255);
+    margin: auto;
+    text-align: center;
 }
 
 div,img{
