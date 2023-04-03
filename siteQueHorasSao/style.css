@@ -2,12 +2,13 @@
 
 header{
     text-align: center;
+   
 }
+
 
 body{
     background-color: rgb(220, 247, 247);
-    font: normal 15pt arial;
-    
+    font: normal 15pt arial;  
 }
 
 
@@ -20,6 +21,15 @@ section{
     text-align: center;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.532);
 }
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    align-items: center;
+    text-align: center;
+}
+
 
 footer{
     color: white;
