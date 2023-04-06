@@ -1,5 +1,5 @@
 body{
-    background-color: aliceblue;
+    background-color: rgb(152, 196, 235);
 }
 section{
     background-color: antiquewhite;
@@ -8,15 +8,19 @@ section{
     margin: auto;
 }
 footer{
-    background-color:rgb(122, 127, 255);
+    background-color:rgb(4, 9, 152);
+    color: aliceblue;
     margin: auto;
     text-align: center;
 }
-
-div,img{
+div#res{
+    margin: auto;
+    text-align: center;
+}
+img{
     width: 150px;
     height: 150px;
-    border-radius: 100px;
+    border-radius: 80px;
     margin: auto;
     align-items: center;
 }

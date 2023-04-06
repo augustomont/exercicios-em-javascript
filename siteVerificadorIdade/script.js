@@ -5,7 +5,7 @@ function verificar(){
     let res = document.querySelector('div#res')
 
     if (fano.value.length == 0 || fano.value > ano){
-        window.alert('erro')
+        window.alert('Preencha os dados')
     } else{
         let fsex = document.getElementsByName('radsex')
         let idade =  ano - Number(fano.value) 
@@ -20,7 +20,9 @@ function verificar(){
             img.setAttribute('src', 'imagens/daiane.jpg')
         }
         res.style.textAligh = 'center'
-        res.innerHTML = `Detectamos ${genero} com ${idade}`
+        res.style.margin = 'auto'
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos
+        `
         res.appendChild(img)
     }
 }
