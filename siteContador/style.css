@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(0, 143, 214);
+    color: aliceblue;
+}
+header{
+    margin: auto;
+    text-align: center;
+}
+section{
+    background-color: aliceblue;
+    color: black;
+    padding: 1%;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+div{
+    padding: 3%;
+}
+footer{
+    margin: auto;
+    text-align: center;
+}
