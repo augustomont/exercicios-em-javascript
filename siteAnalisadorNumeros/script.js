@@ -35,6 +35,24 @@ function adcionar(){
 
 
 function analizar(){
-   resultado.innerHTML = `${valores}`
-}
+   if(valores.length == 0){
+    window.alert(`Preencha os dados`)
+   } else{
+    let maior = valores[0]
+    let menor = valores[0]
+    let soma = 0
+    for(let pos in valores){
+        soma += valores[pos]
+        if(valores[pos]>maior){
+            maior = valores[pos]
+        } else if(valores[pos] < menor){
+            menor = valores[pos]
+        }
+    }
 
+    resultado.innerHTML = `<p>Sua lista tem ${valores.length} itens</p>
+                            <p>O maior valor é ${maior}</p>
+                            <p>O menor valor é ${menor}</p>
+                            <p>A soma dos elementos é ${soma}`
+   }
+}
