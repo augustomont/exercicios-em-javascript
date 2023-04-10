@@ -1,8 +1,8 @@
 function parimp(n){
-    if(num % 2 == 0){
-        return `${num} é par`
+    if(n % 2 == 0){
+        return `${n} é par`
     } else{
-        return `${num} é impar`
+        return `${n} é impar`
     }
 }
 
