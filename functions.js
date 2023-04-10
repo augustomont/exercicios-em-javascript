@@ -1,4 +1,4 @@
-function parimp(num){
+function parimp(n){
     if(num % 2 == 0){
         return `${num} é par`
     } else{
@@ -6,4 +6,5 @@ function parimp(num){
     }
 }
 
-let num = 2
+let num = parimp(2)
+console.log(num)
