@@ -22,13 +22,19 @@ function inLista(n,l){
 
 function adcionar(){
     if(isNumero(numero.value) && !inLista(numero.value, valores)){
-        window.alert(`ok`)
+        valores.push(Number(numero.value))
+        let item = document.createElement('option')
+        item.text = `${numero.value}`
+        lista.appendChild(item)
     }else{
-        window.alert(`${numero} é um valor inválido`)
+        window.alert(`${numero} não é um valor inválido`)
     }
+    numero.value = ''
+    numero.focus()
 }
 
 
 function analizar(){
-   
+   resultado.innerHTML = `${valores}`
 }
+
