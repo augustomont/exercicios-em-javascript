@@ -41,8 +41,10 @@ function analizar(){
     let maior = valores[0]
     let menor = valores[0]
     let soma = 0
+    let media = 0
     for(let pos in valores){
         soma += valores[pos]
+        media = soma/valores.length
         if(valores[pos]>maior){
             maior = valores[pos]
         } else if(valores[pos] < menor){
@@ -53,6 +55,7 @@ function analizar(){
     resultado.innerHTML = `<p>Sua lista tem ${valores.length} itens</p>
                             <p>O maior valor é ${maior}</p>
                             <p>O menor valor é ${menor}</p>
-                            <p>A soma dos elementos é ${soma}`
+                            <p>A soma dos elementos é ${soma}</p>
+                            <p>A media dos valores é ${media}`
    }
 }
