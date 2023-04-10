@@ -11,20 +11,13 @@
     <header><h1>Analisador de Números</h1></header>
     <section>
         <div>
-            <p>Número (entre 1 e 100): <input type="number" name="" id="numtxt"><input type="button" value="Adcionar"></p>
+            Número (entre 1 e 100): <input type="number" name="" id="numtxt"><input type="button" value="Adcionar" onclick="adcionar()">
+            <br><select name="" id="seletor" size="5"></select>
+            <br><input type="button" value="Analizar" onclick="analizar()">
         </div>
-        <div>
-            <select name="" id="seletor" >
-                <option value=""></option>
-            </select>
-            <p>
-                <input type="button" value="Analizar" onclick="analisar()">
-            </p>
-        </div>
-        <div>
-            <p>Analisando...</p>
-        </div>
+        <div id="resultado">Analisando...</div>
     </section>
     <footer>&copy;augusto</footer>
+    <script src="script.js"></script>
 </body>
 </html>
